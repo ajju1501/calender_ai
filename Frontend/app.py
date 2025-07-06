@@ -10,7 +10,7 @@ user_input = st.chat_input("Say something...")
 
 if user_input:
     st.session_state.chat.append(("user", user_input))
-    res = requests.post("https://calendar-ai-production.up.railway.app/chat", json={"text": user_input})
+    res = requests.post("https://calenderai-production.up.railway.app/chat", json={"text": user_input})
     print("STATUS:", res.status_code)
     print("TEXT:", res.text)
     bot_reply = res.json()["response"]
