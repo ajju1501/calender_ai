@@ -1,0 +1,21 @@
+# === Backend: FastAPI & Google Calendar ===
+fastapi
+uvicorn
+python-dotenv
+google-api-python-client
+google-auth
+google-auth-oauthlib
+pydantic
+
+# === LangChain / LangGraph (Agent Logic) ===
+langchain
+openai  # Or replace with `google-generativeai` if you're using Gemini
+tiktoken  # For token handling (if needed)
+
+# === Frontend: Streamlit Chat UI ===
+streamlit
+requests
+
+# === Optional but Useful ===
+httpx  # async HTTP client (if you need async requests)
+google-generativeai
